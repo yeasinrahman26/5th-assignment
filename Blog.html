@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <!-- navbar start -->
+      <nav
+        class="flex flex-col gap-2 md:flex-row md:justify-around bg-[#f3ecdbe8] pt-3 pb-7"
+      >
+        <!-- blog button start -->
+        <button
+          id="blog-btn"
+          class="hidden md:block btn border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] text-xl px-10"
+        >
+          <a href="index.html">Home</a> 
+        </button>
+        <!-- blog button ends -->
+
+        <!-- title start -->
+        <div class="flex flex-col items-center md:flex-row px-2 gap-3">
+          <img src="assets/logo.png" alt="logo" />
+          <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+        </div>
+        <!-- title end -->
+        <!-- current Balance start -->
+        <div class="flex justify-center items-center gap-2 px-2">
+          <!-- hidden blog button start -->
+          <button
+            id="home-btn"
+            class="md:hidden btn w-24 mr-12 border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] text-xl px-8"
+          >
+            Home
+          </button>
+          <!-- hidden blog button end -->
+
+          <img src="assets/coin.png" alt="" />
+          <h1 id="current-balance" class="text-2xl font-bold text-[#111111B3]">
+            5000 BDT
+          </h1>
+        </div>
+        <!-- current Balance ends -->
+      </nav>
+      <!-- navbar end -->
+    </header>
+    <main class="max-w-screen-2xl mx-auto mt-20">
+      <section>
+        <h1 class="text-5xl font-extrabold mx-2 pb-12">Important FAQ</h1>
+      </section>
+      <!-- dropdown part -->
+      <section>
+        <div class="join join-vertical w-full">
+          <div
+            class="collapse py-8 collapse-arrow join-item border-base-300 border"
+          >
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-3xl font-semibold">
+              What is the DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="text-xl font-medium">
+                The DOM (Document Object Model) is a programming interface for
+                web documents. It represents the structure of a webpage as a
+                tree of objects, allowing developers to interact with and
+                manipulate the content, structure, and style of HTML or XML
+                documents.
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse py-8 collapse-arrow join-item border-base-300 border"
+          >
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-3xl font-semibold">
+              How is the DOM different from HTML?
+            </div>
+            <div class="collapse-content">
+              <p class="text-xl font-medium">
+                HTML is the markup language used to define the structure of a
+                webpage, while the DOM is a dynamic in-memory representation of
+                that structure. When a browser loads a webpage, it converts the
+                HTML into the DOM, which can then be modified with JavaScript.
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse py-8 collapse-arrow join-item border-base-300 border"
+          >
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-3xl font-semibold">
+              How can you manipulate the DOM using JavaScript?
+            </div>
+            <div class="collapse-content">
+              <p class="text-xl font-medium">
+                JavaScript can manipulate the DOM by accessing and modifying
+                elements using methods such as getElementById(),
+                querySelector(), or getElementsByClassName(). You can also
+                change attributes, styles, or add new elements dynamically.
+              </p>
+            </div>
+          </div>
+          <div
+            class="collapse py-8 collapse-arrow join-item border-base-300 border"
+          >
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-3xl font-semibold">
+              What are event listeners in the DOM?
+            </div>
+            <div class="collapse-content">
+              <p class="text-xl font-medium">
+                Event listeners are functions in JavaScript that "listen" for
+                specific user actions (like clicks, key presses, or form
+                submissions) on DOM elements. Using addEventListener(),
+                developers can set up custom behavior for when certain events
+                occur on the webpage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
