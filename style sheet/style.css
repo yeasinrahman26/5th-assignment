@@ -1,0 +1,11 @@
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+.primary-btn-css {
+    /* border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] ; */
+    background-color: #B4F461;
+    border: none;
+    
+
+}
