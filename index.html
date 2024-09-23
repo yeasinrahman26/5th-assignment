@@ -36,7 +36,7 @@
         <!-- blog button ends -->
 
         <!-- title start -->
-        <div class="flex flex-col items-center md:flex-row px-2 gap-3">
+        <div class="flex justify-center pb-2 items-center md:flex-row px-2 gap-3">
           <img src="assets/logo.png" alt="logo" />
           <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
         </div>
@@ -49,7 +49,7 @@
               id="blog-btn"
               class="md:hidden btn w-24 mr-12 border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] text-xl px-8"
             >
-              <a href="Blog.html">Blog</a>
+              Blog
             </button>
           </a>
           <!-- hidden blog button end -->
@@ -79,11 +79,13 @@
       </div>
       <!-- navigation button end -->
     </header>
-    <main class="max-w-screen-2xl mx-auto my-20">
+    <main class="max-w-[1250px] mx-auto my-20">
       <!-- donation section start -->
-      <section id="donation-section">
+      <section id="donation-section" class="mx-0 " >
         <!-- 1st box start -->
-        <div class="flex flex-col md:flex-row rounded-2xl shadow-2xl p-8 mt-7">
+        <div
+          class="flex flex-col md:flex-row md:gap-3 items-center rounded-2xl shadow-2xl p-8 mt-7"
+        >
           <!-- box img -->
           <div class=" ">
             <img src="assets/noakhali.png" class="basis-1/2" alt="" />
@@ -97,7 +99,7 @@
             >
               <img src="assets/coin.png" class="h-7" alt="coin logo" />
               <h1
-                id="current-balance"
+                id="noakhali-balance"
                 class="text-lg font-bold text-[#111111B3]"
               >
                 0 BDT
@@ -116,12 +118,13 @@
             </p>
             <input
               type="text"
+              id="noakhali-input"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-4"
             />
             <br />
             <button
-              id="donate-now-btn"
+              id="noakhali-btn"
               class="btn mt-4 w-full border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] px-8"
             >
               Donate Now
@@ -132,7 +135,9 @@
         </div>
 
         <!-- 2nd box start -->
-        <div class="flex flex-col md:flex-row rounded-2xl shadow-2xl p-8 mt-7">
+        <div
+          class="flex flex-col md:flex-row md:gap-3 items-center rounded-2xl shadow-2xl p-8 mt-7"
+        >
           <!-- box img -->
           <div class="">
             <img src="assets/feni.png" class="basis-1/2" alt="" />
@@ -146,10 +151,10 @@
             >
               <img src="assets/coin.png" class="h-7" alt="coin logo" />
               <h1
-                id="current-balance"
+                id="feni-balance"
                 class="text-lg font-bold text-[#111111B3]"
               >
-                0 BDT
+                2300 BDT
               </h1>
             </div>
             <h1 class="text-3xl mt-4 font-semibold">
@@ -165,12 +170,13 @@
             </p>
             <input
               type="text"
+              id="feni-input"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-4"
             />
             <br />
             <button
-              id="donate-now-btn"
+              id="feni-btn"
               class="btn mt-4 w-full border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] px-8"
             >
               Donate Now
@@ -181,7 +187,9 @@
         </div>
 
         <!-- 3rd box start -->
-        <div class="flex flex-col md:flex-row rounded-2xl shadow-2xl p-8 mt-7">
+        <div
+          class="flex flex-col md:flex-row md:gap-3 items-center rounded-2xl shadow-2xl p-8 mt-7"
+        >
           <!-- box img -->
           <div class="">
             <img src="assets/quota-protest.png" class="basis-1/2" alt="" />
@@ -195,7 +203,7 @@
             >
               <img src="assets/coin.png" class="h-7" alt="coin logo" />
               <h1
-                id="current-balance"
+                id="aid-balance"
                 class="text-lg font-bold text-[#111111B3]"
               >
                 0 BDT
@@ -214,12 +222,14 @@
             </p>
             <input
               type="text"
+              id="aid-input"
               placeholder="Write Donation Amount"
               class="input input-bordered w-full mt-4"
             />
             <br />
             <button
-              id="donate-now-btn"
+              id="aid-btn"
+              
               class="btn mt-4 w-full border-[#B4F461] hover:bg-[#B4F461] bg-[#B4F461] px-8"
             >
               Donate Now
@@ -236,8 +246,27 @@
         <!-- history section ends -->
       </section>
     </main>
-    <footer></footer>
+
+    <!-- footer -->
+    <footer class="">
+      <!-- <button class="btn hidden" onclick="my_modal_1.showModal()">open modal</button> -->
+       <!-- onclick="my_modal_1.showModal()" -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box text-center">
+          <h3 class="text-4xl font-extrabold">Congrats!</h3>
+          <img src="assets/coin.png" class="mx-auto w-16 my-5" alt="" />
+          <p class="py-4">You Have Donated for Humankind</p>
+          <h3 class="text-2xl font-semibold">Successfully</h3>
+          <div class="modal-action">
+            <form method="dialog" class="mx-auto">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </footer>
     <!-- js -->
-    <script src=""></script>
+    <script src="js/event.js"></script>
   </body>
 </html>
