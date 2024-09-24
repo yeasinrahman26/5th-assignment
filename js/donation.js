@@ -14,7 +14,7 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
     
 
   } else {
-    alert("some this is wrong");
+    alert("something is wrong");
     
 
   }
@@ -35,7 +35,7 @@ document.getElementById("feni-btn").addEventListener("click", function () {
     
 
   } else {
-    alert("some this is wrong");
+    alert("something is wrong");
     
 
   }
@@ -56,7 +56,7 @@ document.getElementById("aid-btn").addEventListener("click", function () {
     
 
   } else {
-    alert("some this is wrong");
+    alert("something is wrong");
     
 
   }
