@@ -20,3 +20,5 @@ function getInputValue(id) {
   const inputValueNumber = parseFloat(inputValue);
   return inputValueNumber;
 }
+
+// history function
